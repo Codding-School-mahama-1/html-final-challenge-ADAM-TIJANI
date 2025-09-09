@@ -3,16 +3,17 @@ SERIOUS HTML CHALLENGE FOR STUDENTS
 
 Instructions:
 1. This is your homepage. You must create at least two other HTML files (e.g., about.html, contact.html) and link to them from this page.
-inthose files 
+in those files 
+
 about.html
-`
 Add a heading (e.g., <h1>About Me</h1>).
 Write a short paragraph about yourself or the project.
 Include at least one image with an alt attribute.
 Add a list (ordered or unordered) of your skills or interests.
 Add id attributes to at least one element for linking or styling.
-contact.html
 
+
+contact.html
 Add a heading (e.g., <h1>Contact</h1>).
 Write a short paragraph explaining how to contact you.
 Create a form with at least two labeled inputs (e.g., name and email).
@@ -47,29 +48,65 @@ This challenge will test your understanding of linking, structure, forms, tables
 </head>
 <body>
     <!-- Navigation bar: Link to sections and other HTML files -->
-    <nav>
+     <div id="nav-container" class="nav-container" style="background-color: rgb(7, 184, 243); padding: 10px;">
+    <nav id="main-nav">
+        <a href="./about.html">about section</a>
+        <a href="./contact.html">contact section</a>
+        <a href="#about-section"></a>
+        <a href="#contac-section"></a>
         <!-- Example: <a href="#about">About Section</a> | <a href="#contact">Contact Section</a> | <a href="about.html">About Page</a> | <a href="contact.html">Contact Page</a> -->
     </nav>
+    </div>
     <hr>
     <!-- Main content area -->
-    <div class="main-content" id="main-content">
+    <div class="main-content" id="main-content" style="background-color: rgb(66, 135, 41); padding: 20px;">
         <!-- Section 1: About  add id call it about section -->
-        <section >
+        <section id="about-section"></section>
+    <h1>About Me</h1>
+    <p>Skilled fifth year public health student practitioner with 4 years volunteering experience providing comprehensive preventive services at various sectors. Proven ability in immunization, nutrition, malaria control and prevention, health education and promotion, environmental health, and emergency. With centered supervision and effective communication, dedicated to staying abreast of the latest public health advancements and committed to delivering the highest quality services, module.</p>
+    <img src="./Pasted image (2).png" alt="visible image">
+    <h2 id="#skills and experience" style="width: auto;">Skills and Interests</h2>
+    <ol>
+        <li>Vaccine monitoring and administration skills.</li>
+        <li>Water & liquid waste treatment and solid waste management practical skills.</li>
+        <li>Office supply and teaching materials collection skills.</li>
+        <li>Communication skills</li>
+        <li>Empathy and compassion</li>
+        <li>Problem solving and critical thinking</li>
+    </ol>
             <!-- Your About content here -->
         </section>
         <!-- Section 2: add id call it  Contact  -->
-        <section >
+         <div id="contact-container" class="contact-container" style="background-color: rgb(250, 124, 216); padding: 10px;">
+        <section id="contact-section">
             <!-- Your Contact content here -->
+    <h1>contact form</h1>
+    <form action="contact">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="put comments" required></textarea><br><br>
+    </form>
         </section>
     </div>
     <hr>
     <!-- Embed another HTML file using iframe add a youtube video -->
-    <div class="iframe-area" id="iframe-area">
+    <div class="iframe-area" id="iframe-area" style="background-color: rgb(240, 115, 209); padding: 10px;">
         <!-- Example: <iframe src="about.html" width="400" height="200"></iframe> -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/T-F-vVNVQ50?si=3iU3BIAfmIt7OIq6" title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <hr>
     <!-- Small form with labels and inputs -->
     <div class="form-area" id="form-area">
+     <form action="personal information">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"br><br>
+    </form>
         <!-- Example:
         <form>
             <label for="name">Name:</label>
@@ -82,7 +119,18 @@ This challenge will test your understanding of linking, structure, forms, tables
     </div>
     <hr>
     <!-- Table to display names but dont copy mine add more names and more rows atleast 3 rows and columns -->
-    <div class="table-area" id="table-area">
+    <div class="table-area" id="table-area" style="background-color: rgb(158, 102, 123); padding: 10px;">
+        <h1>contact</h1>
+    <p>For inquiries, please reach out via email at adameltijani3@gmail.com</p>
+    <table id="contact-table">
+    <table border="3">
+        <thead>table header</thead>
+            <tr><th>Name</th></tr>
+            <tr><td>Hamed</td></tr>
+            <tr><td>adam</td></tr>
+            <tr><td>osman</td></tr>
+        </tbody>
+    </table>
         <!-- Example:
         <table>
             <tr><th>Name</th></tr>
